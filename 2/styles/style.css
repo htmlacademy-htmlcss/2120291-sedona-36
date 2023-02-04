@@ -1,23 +1,86 @@
 @font-face {
-
-  font-family: "PT Sans";
-  font-size: normal;
   font-weight: 400;
-  src: url("../fonts/ptsans-400.woff2") format("woff2");
+  font-size: normal;
+  font-family: "PT Sans";
+
   font-display: swap;
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
 }
 
 @font-face {
-
-  font-family: "PT Sans";
-  font-size: normal;
   font-weight: 700;
-  src: url("../fonts/ptsans-700.woff2") format("woff2");
+  font-size: normal;
+  font-family: "PT Sans";
+
   font-display: swap;
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
 }
 
+/*body*/
+
 body {
-font-family: "PT Sans";
-font-size: 20px;
-line-height: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+  font-family: "PT Sans";
+  color: #000000;
+}
+
+/*header*/
+
+header .nav {
+  position: absolute;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  height: 64px;
+  padding: 0 70px 0 70px;
+
+  gap: 30px;
+}
+
+.navigation-list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0;
+
+  list-style-type: none;
+
+  gap: 21px;
+}
+
+.navigation-user {
+  list-style-type: none;
+}
+
+header .button {
+  width: 92px;
+  height: 20px;
+
+  line-height: 20px;
+  color: #ffffff;
+  text-transform: uppercase;
+
+  size: 16px;
+}
+
+header .button {
+  top: 14px;
+  left: 108px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 160px;
+  height: 36px;
+  padding: 8px 50px;
+
+  background-color: #756157;
+  border-radius: 4px;
+
+  gap: 10px;
 }
