@@ -16,7 +16,9 @@
   src: url("../fonts/ptsans-700.woff2") format("woff2");
 }
 
-*::before *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -40,7 +42,7 @@ body {
   font-family: "PT Sans", sans-serif;
   color: #000000;
 
-  background: #ffffff;
+  background-color: #ffffff;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
 
@@ -119,21 +121,40 @@ img {
   cursor: pointer;
 }
 
-/*main index*/
-
-.main {
-  background-repeat: no-repeat;
+.button-light {
+  background: #82b3d3;
 }
+
+.button-transparent {
+  background-color: transparent;
+}
+
+/*main index*/
 
 .intro {
   background-color: #82b3d3;
   background-image: url("../images/svg/hero.svg"),
     url("../images/intro/index-background.jpg");
   background-repeat: no-repeat;
+  background-position: bottom, center;
+  background-size: 100% auto, cover;
+}
+
+.advantages-item {
+  background-color: rgba(131, 179, 211, 0.2);
+}
+
+.advantages-item:nth-child(2) {
+  background-color: rgba(131, 179, 211, 0.12);
 }
 
 .advantages-item-full {
-  color: #ffffff;
+  background-color: #82b3d3;
+}
+
+.advantages-content {
+  min-height: 385px;
+  padding: 113px 85px 30px;
 }
 
 .advantages-title {
@@ -143,13 +164,6 @@ img {
   text-transform: uppercase;
 }
 
-.advantages-content {
-  width: 400px;
-  height: 384px;
-
-  background-color: #82b3d3;
-}
-
 .advantages-text {
   font-size: 18px;
   line-height: 21px;
@@ -157,42 +171,78 @@ img {
   color: #333333;
 }
 
-.advantages-content {
-  background-color: rgba(131, 179, 211, 0.12);
+.page-description {
+  padding: 69px 0;
+
+  text-align: center;
 }
 
 .page-title {
-  padding: 69px 0;
+  margin: 0 0 25px;
 
   font-size: 30px;
   line-height: 36px;
-  text-align: center;
   text-transform: uppercase;
 }
 
 .page-text {
+  margin-top: 0;
+
   font-size: 22px;
   line-height: 26px;
-  text-align: center;
   color: #333333;
 }
 
+.advantages-list-recommendations .advantages-item {
+  background-color: rgba(131, 179, 211, 0.12);
+}
+
+.advantages-list-recommendations .advantages-item:nth-child(2n) {
+  background-color: #ffffff;
+}
+
+.advantages-item-full .advantages-title,
+.advantages-item-full .advantages-text {
+  color: #ffffff;
+}
+
 .subscribe {
-  margin: 0 auto;
+  padding-top: 96px;
+  padding-bottom: 104px;
+
+  text-align: center;
 }
 
 .subscribe-home {
-  color: #ffffff;
-
   background-color: #242424;
   background-image: url("../images/intro/subscribe.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.subscribe-title {
+  margin-bottom: 20px;
+}
+
+.subscribe-home .subscribe-title {
+  color: #ffffff;
+}
+
+.subscribe-text {
+  margin-bottom: 55px;
+}
+
+.subscribe-home .subscribe-text {
+  color: #ffffff;
 }
 
 /*main catalog*/
 .main-form {
   color: #ffffff;
 
+  background-color: #82b3d3;
   background-image: url("../images/intro/hotel.jpg");
+  background-repeat: no-repeat;
   background-size: cover;
 }
 
@@ -208,6 +258,9 @@ img {
 }
 
 .filter-group {
+  margin: 0;
+  padding: 0;
+
   color: #ffffff;
 
   border: 0 none;
@@ -220,10 +273,6 @@ img {
 .filter-control-lable {
   font-size: 18px;
   line-height: 23px;
-}
-
-.button-transparent {
-  background-color: transparent;
 }
 
 .sorting-title {
@@ -285,7 +334,7 @@ img {
 }
 
 .pagination-item {
-  margin: 10px;
+  margin-right: 8px;
 }
 
 .pagination-link {
@@ -294,12 +343,15 @@ img {
   height: 60px;
   padding: 10px;
 
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  text-align: center;
   color: #ffffff;
   text-decoration: none;
 
   background-color: #82b3d3;
-  border: solid;
-  border-color: #82b3d3;
+  border: 1px solid #82b3d3;
   border-radius: 4px;
 }
 
@@ -313,10 +365,11 @@ img {
 }
 
 .subscribe-form {
-  display: flex;
+  display: grid;
   max-width: 684px;
   margin: 0 auto;
-  padding: 12px 20px;
+
+  grid-template-columns: 1fr 232px;
 }
 
 .subscribe-input {
@@ -332,12 +385,14 @@ img {
   border-radius: 0 4px 4px 0;
 }
 
-.button-light {
-  background: #82b3d3;
-}
-
 .social-link {
-  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 47px;
+  height: 40px;
+
+  color: #83b3d3;
 }
 
 .social-link img {
@@ -347,12 +402,15 @@ img {
 }
 
 .footer-logo {
-  text-decoration: none;
+  display: block;
+  width: 115px;
+  height: 33px;
+
+  color: #000000;
 }
 
 .footer-logo img {
   display: block;
   width: 115px;
-
   height: 33px;
 }
