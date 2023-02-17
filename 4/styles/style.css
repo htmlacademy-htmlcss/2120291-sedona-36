@@ -108,7 +108,7 @@ img {
   display: block;
   width: 140px;
   height: 70px;
-  margin-left: 30px;
+  margin-left: 70px;
 }
 
 .navigation-logo img {
@@ -393,12 +393,6 @@ img {
   align-content: space-evenly;
 }
 
-.filter-submit {
-  width: 175px;
-
-  background: #82b3d3;
-}
-
 .sorting {
   display: flex;
   flex-wrap: wrap;
@@ -464,7 +458,9 @@ img {
 }
 
 .hotels-list {
-  display: block;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
   width: 345px;
   margin: 40px 70px;
 }
@@ -550,7 +546,7 @@ img {
 .page-footer-container {
   display: flex;
   align-items: center;
-  margin: 0 auto;
+  margin: 0 70px;
 }
 
 .footer-phone {
