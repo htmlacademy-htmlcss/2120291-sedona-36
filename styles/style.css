@@ -34,8 +34,10 @@ html {
 /*body*/
 
 body {
+  display: flex;
   flex-direction: column;
   width: 1200px;
+  min-height: 100vh;
   margin: 0 auto;
 
   font-style: normal;
@@ -289,42 +291,16 @@ img {
   padding: 100px 300px;
 }
 
-.search {
-  text-align: center;
-}
-
-.subscribe {
-  padding-top: 96px;
-  padding-bottom: 104px;
-
-  text-align: center;
-}
-
 .search-button {
   width: 300px;
 }
 
-.subscribe-home {
-  background-color: #242424;
-  background-image: url("../images/intro/subscribe.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
+.search {
+  width: 1200px;
+  height: 406px;
+  padding: 100px 0;
 
-.subscribe-title {
-  margin-bottom: 20px;
-}
-
-.subscribe-home .subscribe-title {
-  color: #ffffff;
-}
-
-.subscribe-text {
-  margin-bottom: 55px;
-}
-
-.subscribe-home .subscribe-text {
-  color: #ffffff;
+  text-align: center;
 }
 
 /*main catalog*/
@@ -516,6 +492,36 @@ img {
   text-decoration: none;
 }
 
+.subscribe {
+  padding-top: 96px;
+  padding-bottom: 104px;
+
+  text-align: center;
+}
+
+.subscribe-home {
+  background-color: #242424;
+  background-image: url("../images/intro/subscribe.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.subscribe-title {
+  margin-bottom: 20px;
+}
+
+.subscribe-home .subscribe-title {
+  color: #ffffff;
+}
+
+.subscribe-text {
+  margin-bottom: 55px;
+}
+
+.subscribe-home .subscribe-text {
+  color: #ffffff;
+}
+
 .subscribe-form {
   display: grid;
   max-width: 684px;
@@ -538,15 +544,15 @@ img {
 }
 
 /*footer*/
-.footer-social {
+.footer {
   display: flex;
-  width: 1200px;
+  flex-wrap: nowrap;
+  align-items: center;
+  padding: 45px 70px 35px;
 }
 
-.page-footer-container {
+.footer-social {
   display: flex;
-  align-items: center;
-  margin: 0 70px;
 }
 
 .footer-phone {
@@ -566,13 +572,13 @@ img {
 
 .social-link img {
   display: block;
-  width: 22px;
-  height: 17px;
+  width: 100%;
+  height: 100%;
 }
 
 .footer-logo {
   display: block;
-  width: 250px;
+  width: 115px;
   height: 33px;
 
   color: #000000;
@@ -580,6 +586,6 @@ img {
 
 .footer-logo img {
   display: block;
-  width: 115px;
-  height: 33px;
+  width: 100%;
+  height: 100%;
 }
