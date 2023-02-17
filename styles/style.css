@@ -307,6 +307,10 @@ img {
   line-height: 78px;
 }
 
+.breadcrumbs {
+  display: flex;
+}
+
 .breadcrumbs-item {
   margin-right: 28px;
 }
