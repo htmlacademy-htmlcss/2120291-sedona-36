@@ -111,14 +111,14 @@ img {
 
 .navigation {
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   align-items: center;
   padding: 0 70px;
 }
 
 .navigation-list {
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
 }
 
 .navigation-item {
@@ -280,8 +280,6 @@ img {
 }
 
 .search {
-  width: 1200px;
-  height: 406px;
   padding: 96px 34px;
 
   text-align: center;
@@ -351,6 +349,7 @@ img {
 
 .filter-button {
   display: flex;
+  flex-direction: column;
 }
 
 .sorting {
@@ -435,6 +434,7 @@ img {
 .hotels-card-title {
   font-size: 24px;
   line-height: 28px;
+  color: #000000;
 }
 
 .hotels-link {
@@ -530,7 +530,7 @@ img {
 /*footer*/
 .footer {
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   align-items: center;
   padding: 45px 70px 35px;
 }
