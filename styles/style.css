@@ -229,6 +229,10 @@ img {
 }
 
 .advantages-item-full {
+  width: 100%;
+
+  color: #000000;
+
   background-color: #82b3d3;
 }
 
@@ -249,10 +253,18 @@ img {
 }
 
 .advantages-title {
+  position: relative;
+
+  margin: 0 0 31px;
+  padding-bottom: 31px;
+
   font-size: 24px;
   line-height: 28px;
-  text-align: center;
   text-transform: uppercase;
+}
+
+.advantages-item-full .advantages-title::after {
+  background-color: rgba(255, 255, 255, 0.3);
 }
 
 .advantages-title::after {
@@ -659,7 +671,7 @@ hotels-img img {
 }
 
 .subscribe-button {
-  padding: 8px 50px;
+  padding: 6px;
 
   font-size: 20px;
   line-height: 36px;
